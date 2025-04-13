@@ -53,25 +53,19 @@ Olá, meu nome é Yuri! Sou um desenvolvedor apaixonado por tecnologia. Com raí
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://my-contribution-data.vercel.app/api?username=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://my-contribution-data.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
+  <a href="https://github.com/yurimoinhos">
+    <img height="180em" src="https://my-contribution-data.vercel.app/api?username=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+    <img height="180em" src="https://my-contribution-data.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
+  </a>
 </div>
 
 ## 📈 Contribuições
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yurimoinhos&theme=dark" alt="YuriMoinhos" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=yurimoinhos&theme=dark&hide_border=false&locale=pt_BR&date_format=j%2Fn%5B%2FY%5D" alt="GitHub Streak" />
 </div>
 
-## 📊 Commits Semanais
-
-<div align="center">
-  <img src="https://my-contribution-data.vercel.app/api/wakatime?username=@yurimoinhos&theme=dark" alt="Weekly Stats" />
-</div>
-
-## 📫 Entre em Contato
-
-Sinta-se à vontade para conectar-se comigo no LinkedIn ou enviar um e-mail. Estou sempre aberto a discutir tecnologia, colaborar em projetos ou apenas bater um papo sobre desenvolvimento!
+Sinta-se à vontade para conectar-se comigo no LinkedIn ou enviar um e-mail.
 
 ---
 
