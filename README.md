@@ -53,8 +53,8 @@ Olá, meu nome é Yuri! Sou um desenvolvedor apaixonado por tecnologia. Com raí
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?usernamw=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?usernamw=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
+  <img height="180em" src="https://my-contribution-data.vercel.app/api?username=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://my-contribution-data.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
 </div>
 
 ## 📈 Contribuições
@@ -66,8 +66,7 @@ Olá, meu nome é Yuri! Sou um desenvolvedor apaixonado por tecnologia. Com raí
 ## 📊 Commits Semanais
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?usernamw=@yurimoinhos&theme=dark" alt="Weekly Stats" />
-  <img src="https://github-readme-stats.vercel.app/api?usernamw=yurimoinhos&count_private=true&include_all_commits=true" alt="Weekly Stats" />
+  <img src="https://my-contribution-data.vercel.app/api/wakatime?username=@yurimoinhos&theme=dark" alt="Weekly Stats" />
 </div>
 
 ## 📫 Entre em Contato
