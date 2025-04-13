@@ -2,7 +2,7 @@
 
 [![Gmail](https://img.shields.io/badge/-Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:moinhosyuri@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yurimoinhos/)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/YuriMoinhos)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/yurimoinhos)
 
 ## 🚀 Sobre Mim
 
@@ -53,20 +53,21 @@ Olá, meu nome é Yuri! Sou um desenvolvedor apaixonado por tecnologia. Com raí
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?usernamw=yurimoinhos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?usernamw=yurimoinhos&layout=compact&langs_count=7&theme=dark"/>
 </div>
 
 ## 📈 Contribuições
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=moinhosyuri&theme=dark" alt="YuriMoinhos" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=yurimoinhos&theme=dark" alt="YuriMoinhos" />
 </div>
 
 ## 📊 Commits Semanais
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=@yurimoinhos&theme=dark" alt="Weekly Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?usernamw=@yurimoinhos&theme=dark" alt="Weekly Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?usernamw=yurimoinhos&count_private=true&include_all_commits=true" alt="Weekly Stats" />
 </div>
 
 ## 📫 Entre em Contato
@@ -75,4 +76,4 @@ Sinta-se à vontade para conectar-se comigo no LinkedIn ou enviar um e-mail. Est
 
 ---
 
-⭐️ De [Yuri Moinhos](https://github.com/YuriMoinhos)
+⭐️ De [Yuri Moinhos](https://github.com/yurimoinhos)
