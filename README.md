@@ -14,48 +14,118 @@ Backend  ·  Frontend  ·  Dados  ·  Mensageria  ·  Segurança  ·  Cloud
 
 ## Mapa de competências
 
+> Cada folha descreve **como** a tecnologia é usada — não detalhes de projeto.
+
 ```mermaid
-mindmap
-  root((Yuri Moinhos))
-    Backend
-      Java / Kotlin
-        Spring Boot
-        Quarkus
-      .NET
-        ASP.NET Core
-        Aspire
-      Golang
-        gRPC
-        Microserviços
-    Frontend
-      React
-        Next.js
-        TanStack
-      Angular
-        RxJS
-        UI Kit
-    Dados
-      SQL
-        PostgreSQL
-        MySQL / SQL Server
-      Documentos
-        MongoDB
-        Redis
-      Grafos
-        Neo4j
-    Plataforma
-      Mensageria
-        Kafka
-        RabbitMQ
-        Azure Service Bus
-      Segurança
-        OAuth2 / OIDC
-        JWT
-        Zero Trust
-      DevOps
-        Docker
-        Azure Container Apps
-        CI/CD
+%%{init: {
+  "theme": "base",
+  "themeVariables": {
+    "fontFamily": "Inter, Segoe UI, system-ui, sans-serif",
+    "fontSize": "14px",
+    "primaryColor": "#1f6feb",
+    "primaryTextColor": "#f0f6fc",
+    "primaryBorderColor": "#388bfd",
+    "secondaryColor": "#238636",
+    "secondaryTextColor": "#f0f6fc",
+    "secondaryBorderColor": "#3fb950",
+    "tertiaryColor": "#8957e5",
+    "tertiaryTextColor": "#f0f6fc",
+    "tertiaryBorderColor": "#a371f7",
+    "lineColor": "#6e7681",
+    "textColor": "#e6edf3",
+    "mainBkg": "#161b22",
+    "nodeBorder": "#30363d",
+    "clusterBkg": "#0d1117",
+    "clusterBorder": "#30363d",
+    "titleColor": "#e6edf3",
+    "edgeLabelBackground": "#0d1117"
+  },
+  "flowchart": {
+    "curve": "basis",
+    "padding": 16,
+    "nodeSpacing": 28,
+    "rankSpacing": 48,
+    "htmlLabels": true
+  }
+}}%%
+flowchart TB
+  ROOT(["✦  Competências"])
+
+  ROOT --> BE
+  ROOT --> FE
+  ROOT --> DATA
+  ROOT --> PLAT
+
+  subgraph BE["⚙️  Backend"]
+    direction TB
+    JK["☕  Java / Kotlin"]
+    NET["🟣  .NET"]
+    GO["🔵  Golang"]
+
+    JK --> JK1["Spring Boot<br/><i>APIs REST · domínio rico</i>"]
+    JK --> JK2["Quarkus<br/><i>cloud-native · startup rápido</i>"]
+
+    NET --> NET1["ASP.NET Core<br/><i>APIs enterprise · middleware</i>"]
+    NET --> NET2[".NET Aspire<br/><i>orquestração local · observabilidade</i>"]
+
+    GO --> GO1["gRPC / HTTP<br/><i>baixa latência · contratos tipados</i>"]
+    GO --> GO2["Microsserviços<br/><i>gateways · workers leves</i>"]
+  end
+
+  subgraph FE["🖥️  Frontend"]
+    direction TB
+    RE["⚛️  React"]
+    NG["🅰️  Angular"]
+
+    RE --> RE1["Next.js<br/><i>SSR / SSG · rotas e SEO</i>"]
+    RE --> RE2["TanStack Query<br/><i>cache · estado de servidor</i>"]
+
+    NG --> NG1["Signals<br/><i>estado reativo fino · fine-grained</i>"]
+    NG --> NG2["Standalone Components<br/><i>árvore sem NgModule</i>"]
+  end
+
+  subgraph DATA["🗄️  Dados"]
+    direction TB
+    SQL["📐  SQL"]
+    DOC["📄  Documentos"]
+    GRAF["🕸️  Grafos"]
+
+    SQL --> SQL1["PostgreSQL / MySQL / SQL Server<br/><i>transações · modelagem · reporting</i>"]
+    DOC --> DOC1["MongoDB<br/><i>schema flexível · agregados</i>"]
+    DOC --> DOC2["Redis<br/><i>cache · sessões · estruturas</i>"]
+    GRAF --> GRAF1["Neo4j<br/><i>relacionamentos · recomendações</i>"]
+  end
+
+  subgraph PLAT["🛡️  Plataforma"]
+    direction TB
+    MSG["📨  Mensageria"]
+    SEC["🔐  Segurança"]
+    OPS["🚀  DevOps"]
+
+    MSG --> MSG1["Kafka<br/><i>streams · alto volume · replay</i>"]
+    MSG --> MSG2["RabbitMQ / Service Bus<br/><i>filas · routing · integração</i>"]
+
+    SEC --> SEC1["OAuth2 / OIDC + JWT<br/><i>identidade · tokens · escopos</i>"]
+    SEC --> SEC2["Zero Trust · RBAC<br/><i>least privilege · auditoria</i>"]
+
+    OPS --> OPS1["Docker · CI/CD<br/><i>build · pipelines · releases</i>"]
+    OPS --> OPS2["Azure Container Apps<br/><i>deploy managed · scale</i>"]
+  end
+
+  classDef root fill:#1f6feb,stroke:#58a6ff,stroke-width:2px,color:#fff,font-weight:700
+  classDef pillar fill:#21262d,stroke:#8b949e,stroke-width:1px,color:#e6edf3,font-weight:600
+  classDef leaf fill:#161b22,stroke:#30363d,stroke-width:1px,color:#c9d1d9
+  classDef be fill:#1a2332,stroke:#388bfd,color:#79c0ff
+  classDef fe fill:#2a1f24,stroke:#f778ba,color:#ff7b72
+  classDef data fill:#1a2a22,stroke:#3fb950,color:#56d364
+  classDef plat fill:#241f2e,stroke:#a371f7,color:#d2a8ff
+
+  class ROOT root
+  class JK,NET,GO be
+  class RE,NG fe
+  class SQL,DOC,GRAF data
+  class MSG,SEC,OPS plat
+  class JK1,JK2,NET1,NET2,GO1,GO2,RE1,RE2,NG1,NG2,SQL1,DOC1,DOC2,GRAF1,MSG1,MSG2,SEC1,SEC2,OPS1,OPS2 leaf
 ```
 
 ---
@@ -96,41 +166,16 @@ mindmap
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
   <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue.js" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
 ### Bancos de dados
 
-```mermaid
-flowchart LR
-  APP[Aplicação]
-
-  subgraph SQL["Relacional · SQL"]
-    PG[(PostgreSQL)]
-    MY[(MySQL)]
-    SS[(SQL Server)]
-  end
-
-  subgraph DOC["Orientados a documentos"]
-    MG[(MongoDB)]
-    RD[(Redis)]
-  end
-
-  subgraph GRAFO["Orientados a grafos"]
-    NJ[(Neo4j)]
-  end
-
-  APP --> SQL
-  APP --> DOC
-  APP --> GRAFO
-```
-
 | Paradigma | Tecnologias | Quando uso |
 |-----------|-------------|------------|
-| **SQL / Relacional** | PostgreSQL, MySQL, SQL Server | Consistência, transações, reporting, contratos comerciais |
-| **Documentos** | MongoDB, Redis (cache/estrutura) | Flexibilidade de schema, sessões, agregados |
-| **Grafos** | Neo4j | Relacionamentos densos, recomendações, permissões em rede |
+| **SQL / Relacional** | PostgreSQL, MySQL, SQL Server | Consistência, transações, reporting |
+| **Documentos** | MongoDB, Redis (cache/estrutura) | Schema flexível, sessões, agregados |
+| **Grafos** | Neo4j | Relacionamentos densos, recomendações |
 
 <p align="center">
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
@@ -144,18 +189,6 @@ flowchart LR
 ---
 
 ## Mensageria & eventos
-
-```mermaid
-flowchart TB
-  P[Produtores] --> B{Broker}
-  B -->|Kafka| S1[Stream / event sourcing]
-  B -->|RabbitMQ| S2[Filas / work queues]
-  B -->|Service Bus| S3[Integração cloud]
-  S1 --> C[Consumidores]
-  S2 --> C
-  S3 --> C
-  C --> O[Outbox · Idempotência · Retry · DLQ]
-```
 
 | Padrão | Ferramenta | Objetivo |
 |--------|------------|----------|
@@ -174,16 +207,6 @@ flowchart TB
 
 ## Segurança (by design)
 
-```mermaid
-flowchart LR
-  U[Cliente] -->|HTTPS / TLS| GW[API Gateway]
-  GW -->|OAuth2 / OIDC| ID[Identity Provider]
-  GW -->|JWT validado| SVC[Serviços]
-  SVC --> RBAC[RBAC / escopos]
-  SVC --> SECRETS[Secrets / Key Vault]
-  SVC --> AUDIT[Logs & auditoria]
-```
-
 | Prática | Detalhe |
 |---------|---------|
 | **Autenticação** | OAuth 2.0 / OpenID Connect, JWT com validação de assinatura e expiração |
@@ -199,42 +222,6 @@ flowchart LR
   <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
   <img src="https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white" alt="OWASP" />
 </p>
-
----
-
-## Arquitetura em visão geral
-
-```mermaid
-flowchart TB
-  subgraph Client["Clientes"]
-    WEB[React / Angular]
-  end
-
-  subgraph Edge["Edge / Gateway"]
-    GW[API Gateway · OpenAPI]
-  end
-
-  subgraph Services["Serviços"]
-    JAVA[Java / Kotlin]
-    DOTNET[.NET]
-    GO[Golang · gRPC]
-  end
-
-  subgraph Data["Dados"]
-    RDB[(SQL)]
-    DOC[(Documentos)]
-    GRAPH[(Grafos)]
-  end
-
-  subgraph Async["Assíncrono"]
-    MQ[Kafka · RabbitMQ · Service Bus]
-  end
-
-  WEB --> GW
-  GW --> JAVA & DOTNET & GO
-  JAVA & DOTNET & GO --> RDB & DOC & GRAPH
-  JAVA & DOTNET & GO <--> MQ
-```
 
 ---
 
