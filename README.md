@@ -14,7 +14,7 @@ Backend  ·  Frontend  ·  Dados  ·  Mensageria  ·  Segurança  ·  Cloud
 
 ## Mapa de competências
 
-> Cada folha descreve **como** a tecnologia é usada — não detalhes de projeto.
+> Um panorama do que costumo usar no dia a dia e em que situações cada peça encaixa.
 
 ```mermaid
 %%{init: {
@@ -62,14 +62,14 @@ flowchart TB
     NET["🟣  .NET"]
     GO["🔵  Golang"]
 
-    JK --> JK1["Spring Boot<br/><i>APIs REST · domínio rico</i>"]
-    JK --> JK2["Quarkus<br/><i>cloud-native · startup rápido</i>"]
+    JK --> JK1["Spring Boot<br/><i>quando o domínio pede estrutura<br/>e APIs maduras</i>"]
+    JK --> JK2["Quarkus<br/><i>quando o serviço precisa<br/>subir leve e nativo</i>"]
 
-    NET --> NET1["ASP.NET Core<br/><i>APIs enterprise · middleware</i>"]
-    NET --> NET2[".NET Aspire<br/><i>orquestração local · observabilidade</i>"]
+    NET --> NET1["ASP.NET Core<br/><i>APIs sólidas com pipeline<br/>e integração bem definida</i>"]
+    NET --> NET2[".NET Aspire<br/><i>para rodar e observar<br/>o conjunto localmente</i>"]
 
-    GO --> GO1["gRPC / HTTP<br/><i>baixa latência · contratos tipados</i>"]
-    GO --> GO2["Microsserviços<br/><i>gateways · workers leves</i>"]
+    GO --> GO1["gRPC / HTTP<br/><i>comunicação rápida<br/>entre serviços</i>"]
+    GO --> GO2["Microsserviços<br/><i>gateways e workers<br/>com footprint pequeno</i>"]
   end
 
   subgraph FE["🖥️  Frontend"]
@@ -77,11 +77,11 @@ flowchart TB
     RE["⚛️  React"]
     NG["🅰️  Angular"]
 
-    RE --> RE1["Next.js<br/><i>SSR / SSG · rotas e SEO</i>"]
-    RE --> RE2["TanStack Query<br/><i>cache · estado de servidor</i>"]
+    RE --> RE1["Next.js<br/><i>páginas rápidas,<br/>SEO e rotas no servidor</i>"]
+    RE --> RE2["TanStack Query<br/><i>dados remotos com<br/>cache sem drama</i>"]
 
-    NG --> NG1["Signals<br/><i>estado reativo fino · fine-grained</i>"]
-    NG --> NG2["Standalone Components<br/><i>árvore sem NgModule</i>"]
+    NG --> NG1["Signals<br/><i>UI que reage só<br/>ao que realmente mudou</i>"]
+    NG --> NG2["Standalone Components<br/><i>componentes independentes,<br/>sem carregar NgModule</i>"]
   end
 
   subgraph DATA["🗄️  Dados"]
@@ -90,10 +90,10 @@ flowchart TB
     DOC["📄  Documentos"]
     GRAF["🕸️  Grafos"]
 
-    SQL --> SQL1["PostgreSQL / MySQL / SQL Server<br/><i>transações · modelagem · reporting</i>"]
-    DOC --> DOC1["MongoDB<br/><i>schema flexível · agregados</i>"]
-    DOC --> DOC2["Redis<br/><i>cache · sessões · estruturas</i>"]
-    GRAF --> GRAF1["Neo4j<br/><i>relacionamentos · recomendações</i>"]
+    SQL --> SQL1["PostgreSQL / MySQL / SQL Server<br/><i>quando consistência<br/>e consultas importam</i>"]
+    DOC --> DOC1["MongoDB<br/><i>documentos que evoluem<br/>sem schema rígido</i>"]
+    DOC --> DOC2["Redis<br/><i>resposta imediata:<br/>cache, sessões, filas leves</i>"]
+    GRAF --> GRAF1["Neo4j<br/><i>quando o valor está<br/>nas conexões entre entidades</i>"]
   end
 
   subgraph PLAT["🛡️  Plataforma"]
@@ -102,14 +102,14 @@ flowchart TB
     SEC["🔐  Segurança"]
     OPS["🚀  DevOps"]
 
-    MSG --> MSG1["Kafka<br/><i>streams · alto volume · replay</i>"]
-    MSG --> MSG2["RabbitMQ / Service Bus<br/><i>filas · routing · integração</i>"]
+    MSG --> MSG1["Kafka<br/><i>fluxo contínuo de eventos<br/>em volume alto</i>"]
+    MSG --> MSG2["RabbitMQ / Service Bus<br/><i>tarefas e integrações<br/>com entrega confiável</i>"]
 
-    SEC --> SEC1["OAuth2 / OIDC + JWT<br/><i>identidade · tokens · escopos</i>"]
-    SEC --> SEC2["Zero Trust · RBAC<br/><i>least privilege · auditoria</i>"]
+    SEC --> SEC1["OAuth2 / OIDC + JWT<br/><i>quem é o usuário<br/>e o que ele pode fazer</i>"]
+    SEC --> SEC2["Zero Trust · RBAC<br/><i>acesso mínimo,<br/>sem confiar no perímetro</i>"]
 
-    OPS --> OPS1["Docker · CI/CD<br/><i>build · pipelines · releases</i>"]
-    OPS --> OPS2["Azure Container Apps<br/><i>deploy managed · scale</i>"]
+    OPS --> OPS1["Docker · CI/CD<br/><i>do commit ao artefato<br/>de forma repetível</i>"]
+    OPS --> OPS2["Azure Container Apps<br/><i>subir serviços na nuvem<br/>sem cuidar de cluster</i>"]
   end
 
   classDef root fill:#1f6feb,stroke:#58a6ff,stroke-width:2px,color:#fff,font-weight:700
