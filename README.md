@@ -14,118 +14,79 @@ Backend  ·  Frontend  ·  Dados  ·  Mensageria  ·  Segurança  ·  Cloud
 
 ## Mapa de competências
 
-> Um panorama do que costumo usar no dia a dia e em que situações cada peça encaixa.
+> Segue uma visualização acerca das stacks que atuo.
 
 ```mermaid
 %%{init: {
-  "theme": "base",
+  "theme": "dark",
   "themeVariables": {
-    "fontFamily": "Inter, Segoe UI, system-ui, sans-serif",
-    "fontSize": "14px",
+    "fontFamily": "Segoe UI, Inter, system-ui, sans-serif",
+    "fontSize": "13px",
     "primaryColor": "#1f6feb",
-    "primaryTextColor": "#f0f6fc",
-    "primaryBorderColor": "#388bfd",
-    "secondaryColor": "#238636",
-    "secondaryTextColor": "#f0f6fc",
-    "secondaryBorderColor": "#3fb950",
-    "tertiaryColor": "#8957e5",
-    "tertiaryTextColor": "#f0f6fc",
-    "tertiaryBorderColor": "#a371f7",
-    "lineColor": "#6e7681",
-    "textColor": "#e6edf3",
-    "mainBkg": "#161b22",
-    "nodeBorder": "#30363d",
-    "clusterBkg": "#0d1117",
-    "clusterBorder": "#30363d",
-    "titleColor": "#e6edf3",
-    "edgeLabelBackground": "#0d1117"
-  },
-  "flowchart": {
-    "curve": "basis",
-    "padding": 16,
-    "nodeSpacing": 28,
-    "rankSpacing": 48,
-    "htmlLabels": true
+    "primaryTextColor": "#ffffff",
+    "primaryBorderColor": "#58a6ff",
+    "lineColor": "#8b949e",
+    "secondaryColor": "#21262d",
+    "tertiaryColor": "#161b22"
   }
 }}%%
-flowchart TB
-  ROOT(["✦  Competências"])
-
-  ROOT --> BE
-  ROOT --> FE
-  ROOT --> DATA
-  ROOT --> PLAT
-
-  subgraph BE["⚙️  Backend"]
-    direction TB
-    JK["☕  Java / Kotlin"]
-    NET["🟣  .NET"]
-    GO["🔵  Golang"]
-
-    JK --> JK1["Spring Boot<br/><i>quando o domínio pede estrutura<br/>e APIs maduras</i>"]
-    JK --> JK2["Quarkus<br/><i>quando o serviço precisa<br/>subir leve e nativo</i>"]
-
-    NET --> NET1["ASP.NET Core<br/><i>APIs sólidas com pipeline<br/>e integração bem definida</i>"]
-    NET --> NET2[".NET Aspire<br/><i>para rodar e observar<br/>o conjunto localmente</i>"]
-
-    GO --> GO1["gRPC / HTTP<br/><i>comunicação rápida<br/>entre serviços</i>"]
-    GO --> GO2["Microsserviços<br/><i>gateways e workers<br/>com footprint pequeno</i>"]
-  end
-
-  subgraph FE["🖥️  Frontend"]
-    direction TB
-    RE["⚛️  React"]
-    NG["🅰️  Angular"]
-
-    RE --> RE1["Next.js<br/><i>páginas rápidas,<br/>SEO e rotas no servidor</i>"]
-    RE --> RE2["TanStack Query<br/><i>dados remotos com<br/>cache sem drama</i>"]
-
-    NG --> NG1["Signals<br/><i>UI que reage só<br/>ao que realmente mudou</i>"]
-    NG --> NG2["Standalone Components<br/><i>componentes independentes,<br/>sem carregar NgModule</i>"]
-  end
-
-  subgraph DATA["🗄️  Dados"]
-    direction TB
-    SQL["📐  SQL"]
-    DOC["📄  Documentos"]
-    GRAF["🕸️  Grafos"]
-
-    SQL --> SQL1["PostgreSQL / MySQL / SQL Server<br/><i>quando consistência<br/>e consultas importam</i>"]
-    DOC --> DOC1["MongoDB<br/><i>documentos que evoluem<br/>sem schema rígido</i>"]
-    DOC --> DOC2["Redis<br/><i>resposta imediata:<br/>cache, sessões, filas leves</i>"]
-    GRAF --> GRAF1["Neo4j<br/><i>quando o valor está<br/>nas conexões entre entidades</i>"]
-  end
-
-  subgraph PLAT["🛡️  Plataforma"]
-    direction TB
-    MSG["📨  Mensageria"]
-    SEC["🔐  Segurança"]
-    OPS["🚀  DevOps"]
-
-    MSG --> MSG1["Kafka<br/><i>fluxo contínuo de eventos<br/>em volume alto</i>"]
-    MSG --> MSG2["RabbitMQ / Service Bus<br/><i>tarefas e integrações<br/>com entrega confiável</i>"]
-
-    SEC --> SEC1["OAuth2 / OIDC + JWT<br/><i>quem é o usuário<br/>e o que ele pode fazer</i>"]
-    SEC --> SEC2["Zero Trust · RBAC<br/><i>acesso mínimo,<br/>sem confiar no perímetro</i>"]
-
-    OPS --> OPS1["Docker · CI/CD<br/><i>do commit ao artefato<br/>de forma repetível</i>"]
-    OPS --> OPS2["Azure Container Apps<br/><i>subir serviços na nuvem<br/>sem cuidar de cluster</i>"]
-  end
-
-  classDef root fill:#1f6feb,stroke:#58a6ff,stroke-width:2px,color:#fff,font-weight:700
-  classDef pillar fill:#21262d,stroke:#8b949e,stroke-width:1px,color:#e6edf3,font-weight:600
-  classDef leaf fill:#161b22,stroke:#30363d,stroke-width:1px,color:#c9d1d9
-  classDef be fill:#1a2332,stroke:#388bfd,color:#79c0ff
-  classDef fe fill:#2a1f24,stroke:#f778ba,color:#ff7b72
-  classDef data fill:#1a2a22,stroke:#3fb950,color:#56d364
-  classDef plat fill:#241f2e,stroke:#a371f7,color:#d2a8ff
-
-  class ROOT root
-  class JK,NET,GO be
-  class RE,NG fe
-  class SQL,DOC,GRAF data
-  class MSG,SEC,OPS plat
-  class JK1,JK2,NET1,NET2,GO1,GO2,RE1,RE2,NG1,NG2,SQL1,DOC1,DOC2,GRAF1,MSG1,MSG2,SEC1,SEC2,OPS1,OPS2 leaf
+mindmap
+  root((Competências))
+    Backend
+      Java / Kotlin
+        Spring Boot
+          domínio estruturado e APIs maduras
+        Quarkus
+          serviços leves e nativos
+      .NET
+        ASP.NET Core
+          APIs com pipeline e integração clara
+        .NET Aspire
+          rodar e observar o conjunto local
+      Golang
+        gRPC / HTTP
+          comunicação rápida entre serviços
+        Microsserviços
+          gateways e workers enxutos
+    Frontend
+      React
+        Next.js
+          páginas rápidas, SEO e rotas no servidor
+        TanStack Query
+          dados remotos com cache sem drama
+      Angular
+        Signals
+          UI que reage só ao que mudou
+        Standalone Components
+          componentes sem NgModule
+    Dados
+      SQL
+        PostgreSQL · MySQL · SQL Server
+          consistência e consultas
+      Documentos
+        MongoDB
+          documentos que evoluem livremente
+        Redis
+          cache, sessões e resposta imediata
+      Grafos
+        Neo4j
+          valor nas conexões entre entidades
+    Plataforma
+      Mensageria
+        Kafka
+          eventos em volume alto
+        RabbitMQ / Service Bus
+          tarefas com entrega confiável
+      Segurança
+        OAuth2 / OIDC · JWT
+          identidade e permissões
+        Zero Trust · RBAC
+          acesso mínimo, sem perímetro cego
+      DevOps
+        Docker · CI/CD
+          do commit ao artefato
+        Azure Container Apps
+          deploy na nuvem sem cluster
 ```
 
 ---
@@ -225,17 +186,11 @@ flowchart TB
 
 ---
 
-## Formação
-
-- **Ciência de Dados e Inteligência Artificial** — SENAI CIMATEC
-
----
-
 ## GitHub
 
 <div align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=yurimoinhos&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub stats" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Top languages" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api?username=yurimoinhos&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub stats" />
+  <img height="180" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=yurimoinhos&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Top languages" />
 </div>
 
 <div align="center">
@@ -243,7 +198,7 @@ flowchart TB
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yurimoinhos&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ffffff&area=true&hide_border=true" alt="Contribution graph" />
+  <img src="https://github-contribution-stats.vercel.app/api?username=yurimoinhos" alt="Contribution stats" />
 </div>
 
 ---
